@@ -7,7 +7,7 @@
  * @listint_t: parameter
  * @*head: pointer to head of s..linked list
  *
- * Return: 1
+ * Return 0 if not palndrome, else 1 if it is a palindrome
  */
 
 int is_palindrome(listint_t **head)
