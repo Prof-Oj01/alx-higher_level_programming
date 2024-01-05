@@ -3,7 +3,7 @@
 An empty module 0-rectangle.
 """
 
-Class Rectangle:
+class Rectangle:
     """
     Represents an empty rectangle class.
     """
