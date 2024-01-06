@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 class LockedClass:
-    __slots__ = ('first_name',)
+    __slots__ = ('first_name',)  # Restrict allowed attributes
 
     def __setattr__(self, name, value):
         if name != 'first_name':
-            raise AttributeError("'LockedClass' object has no attribute 'last_name'")
-        super().__setattr__(name, value)
+            raise AttributeError(f"'LockedClass' object has no attribute '{name}'")  # Use f-string for dynamic attribute name
+        super().__setattr__(name, value)  # Call superclass method to set allowed attribute
+
